@@ -3,5 +3,20 @@
 //
 // Larger layout items that contain base elements are styled here, such as <header>,
 // <main>, <footer>, and BEM classes.
-// example.
 //
+
+#container {
+  margin: auto;
+  width: 1024px;
+  height: 100vh;
+  border: 10px solid black;
+
+  @media (max-width: $breakpoint--tablet) {
+    width: $width--tablet;
+    border-color: green;
+  }
+
+  @media (max-width: $breakpoint--phone) {
+    width: $width--phone;
+  }
+}

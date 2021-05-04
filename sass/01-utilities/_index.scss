@@ -4,3 +4,9 @@
 // Import the basic utilities that other components in your project will require that
 // don’t change. For example, color palettes, global variables, mixins, etc.
 //
+
+$breakpoint--tablet: 1100px;
+$breakpoint--phone:  840px;
+
+$width--tablet: 768px;
+$width--phone: 91.42%;
