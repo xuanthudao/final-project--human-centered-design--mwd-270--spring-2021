@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sass/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="form-title">
+        <h2>Need more information?</h2>
+        <p>Fill out our form with your information</p>
+    </div>
+    <form class="contact" name="form" onsubmit="alert('Success');">
+        <fieldset>
+            <div class="name">
+                <label for="first-name">First name: </label>
+                <input id="first-name" name="first-name" type="text" placeholder="Tom" pattern="^[A-Za-zÀ-ÿ ,.'-]+$" required ><br>
+                <label for="last-name">Last name: </label>
+                <input id="last-name" name="last-name" type="text" placeholder="Holland" pattern="^[A-Za-zÀ-ÿ ,.'-]+$" required><br>
+            </div>
+            <div class="basic-info">
+                <label for="street">Street number:</label>
+                <input id="street" type="text" placeholder="117 Cleveland st" required>
+                <label for="city">City:</label>
+                <input id="city" type="text" placeholder="Bay Shore" required>
+                <label for="state">State:</label>
+                <input required id="state" name="state" size="5" placeholder="NY">
+                <label for="zip-code">Zip code:</label><input id="zip-code" size="5" type="text" placeholder="11111" pattern="[0-9]{5}" required><br>
+                <label for="phone">Phone number:</label>
+                <input id="phone" name="tel" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-445-6789" required><br>
+                <label>Email address: </label><input id="email" name="email" type="text" size="30" placeholder="abc123@gmail.com" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required><br>
+            </div>
+            <div>
+                <label for="info">Have any questions?</label><br><textarea id="info" name="moreinfo" rows="5" cols="50" placeholder="Have any question? Send us!"></textarea><br>
+            </div>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="reset">Clear</button>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>
