@@ -1,0 +1,15 @@
+header nav {
+  position: absolute;
+}
+
+body {
+  background-color: beige;
+}
+
+main {
+  width: 60vw;
+  margin: auto;
+  border: 2px black;
+}
+
+/*# sourceMappingURL=main.css.map */
