@@ -1,40 +1,30 @@
-@charset "utf-8";
-//
-// This file acts like an index, importing partials from each of the numbered
-// folders below. Any code, such as hacks and temporary fixes, not entered into a
-// proper partial must go in the shame file imported at the end of this document; no
-// syntax of any kind should ever be placed in this file.
-//
-// Contents:
-//
-// 00. Main (The index file that combines the following partials into one CSS file)
-// 01. Utilities (Variables, functions, mixins, etc)
-// 02. Base (Base HTML elements, such as <body>, <a>, <strong>, etc)
-// 03. Layout (Larger elements, such as <header>, <main>, and BEM)
-// 04. States (JavaScript-related classes)
-// 05. Shame (Any code that would otherwise be marked with a TODO elsewhere)
-
-// ==================================================================================
-// Utilities
-// ==================================================================================
-@import '01-utilities/index';
-
-// ==================================================================================
-// Base
-// ==================================================================================
-@import '02-base/index';
-
-// ==================================================================================
-// Layout
-// ==================================================================================
-@import '03-layout/index';
-
-// ==================================================================================
-// States
-// ==================================================================================
-@import '04-states/index';
-
-// ==================================================================================
-// Shame
-// ==================================================================================
-@import '05-_shame';
+body{
+  background-color: $color--body-background;
+  margin: auto;
+  border: 2px black;
+}
+main{
+  width: 70vw;
+  margin: 20px auto;
+  align-self: center;
+  background-color: $color--main-background;
+}
+h2{
+  font-family: $font--reading;
+}
+p{
+  font-family: $font--reading;
+  font-size: $font--text-size;
+  font-weight: $font--text-weight;
+}
+#monet img {
+  width: 250px;
+}
+#gallery img{
+  height: 50%;
+}
+img {
+  width:  90%;
+  height: 90%;
+  object-fit: cover;
+}
